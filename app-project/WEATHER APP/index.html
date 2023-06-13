@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="3464160bcd2d5cbeb6ae24c903600b9f"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title> Weather App </title>
+</head>
+
+<body>
+    <button id="calendrier">Calendrier</button>
+    <div id="wrapper" style="display: none;">
+    <div class="wrapper"id="wrapper">
+        
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Lun</li>
+            <li>Mar</li>
+            <li>Mer</li>
+            <li>jeu</li>
+            <li>ven</li>
+            <li>Sam</li>
+            <li>Dim</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Entez votre location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Oops! lieu non trouvé :/</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidité</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>vent-vitesse</p>
+                </div>
+            </div>
+            <button class="close-button"><img src="./images/bouton swip.png" alt=""></button>
+
+        </div>
+    </div>
+    <div class="swip_button">
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
