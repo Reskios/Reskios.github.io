@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>life_management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+         <div class="connexion">
+            <h1>connexion</h1>
+        </div>
+        <form action="">
+            <label for="username_i" id="username"> <strong>Nom d'utilisateur</strong></label>
+            <br>
+            <input type="text" id="username_i" placeholder="Entrer l'identifier ou le nom d'utilisateur" 
+            required oninvalid="this.setCustomValidity('veuillez remplir ce champ');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Veuillez remplir ce champ">
+            <br>
+            <label for="password_i" id="password"><strong>Mot de passe</strong> </label>
+            <br>
+            <input type="password" id="password_i"  placeholder="Entrer le mot de passe" 
+            required oninvalid="this.setCustomValidity('veuillez remplir ce champ');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Veuillez remplir ce champ">
+            <div class="absolute">
+                <button type="submit" id="button">Login</button>
+            </div>
+        </form>
+        <div class="Absolute">
+                <img src="./asset/img/eyes-close.png" alt="eyes-close"  id="eye" onclick="changer()">
+            </div>
+
+        <div id="message">
+            <h3> Le mot de passe doit contenir les éléments suivants</h3>
+            <p id="letter" class="invalid"> Une lettre minuscule</p>
+            <p id="capital" class="invalid"> Une lettre majuscule</p>
+            <p id="number" class="invalid"> Un chiffre</p>
+            <p id="length" class="invalid"> 8 Caractères minimum</p>
+        </div>
+        <script src="javascript.js"></script>
+    </main>
+    
+</body>
+</html>
