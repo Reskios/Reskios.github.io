@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>life_management</title>
+    <link rel="stylesheet" href="./index_login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">logo</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="./index_home.html" style="--i:0;">Home</a>
+            <a href="#" style="--i:1;">About</a>
+            <a href="#" style="--i:2;">Contact</a>
+            <a href="#" style="--i:3;">Setting</a>
+            <a href="./index_login.html" style="--i:4;">Login</a>
+        </nav>
+    </header>
+
+    <main>
+         <div class="connexion">
+            <h1>connexion</h1>
+        </div>
+        <form action="">
+            <label for="username_i" id="username"> <strong>Nom d'utilisateur</strong></label>
+            <br>
+            <input type="text" id="username_i" class="invalid" placeholder="Entrer l'identifier ou le nom d'utilisateur" 
+            required oninvalid="this.setCustomValidity('veuillez remplir ce champ');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Veuillez remplir ce champ">
+            <br>
+            <label for="password_i" id="password"><strong>Mot de passe</strong> </label>
+            <br>
+            <input type="password" id="password_i"  class="invalid" placeholder="Entrer le mot de passe" 
+            required oninvalid="this.setCustomValidity('veuillez remplir ce champ');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Veuillez remplir ce champ">
+            <div class="absolute">
+                <button type="submit" id="button">Login</button>
+
+            </div>
+        </form>
+        <div class="Absolute">
+                <img src="./asset/img/eyes-close.png" alt="eyes-close"  id="eye" onclick="changer()">
+            </div>
+
+        <div id="message">
+            <h3> Le mot de passe doit contenir les éléments suivants</h3>
+            <p id="letter" class="invalid"> Une lettre minuscule</p>
+            <p id="capital" class="invalid"> Une lettre majuscule</p>
+            <p id="number" class="invalid"> Un chiffre</p>
+            <p id="length" class="invalid"> 8 Caractères minimum</p>
+        </div>
+        <script src="./index_login.js"></script>
+
+    </main>
+    
+</body>
+</html>
